@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-get "doctors", to: "doctors#index"
-
-
+  resources :doctors
+  root 'doctors#index'
+end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
   # Defines the root path route ("/")
   # root "articles#index"
-end
 
 #   Prefix  Verb    URI Pattern            Controller#Action
 #     restaurants  GET     /restaurants           restaurants#index

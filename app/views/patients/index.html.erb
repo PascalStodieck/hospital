@@ -1,7 +1,8 @@
 <div class="container">
   <h1>Patients</h1>
 
-  <% @Patients.each do |Patient| %>
+      <% @patients.each do |patient| %>
+
   <ul>
     <li>
     <%= link_to patient.first_name, patient_path(patient.id) %>
@@ -10,4 +11,4 @@
 <% end %>
 
 
-  <%= link_to "add a new doctor", new_doctor_path %>
+  <%= link_to "add a new patient",  new_patient_path %>

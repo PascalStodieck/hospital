@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Patients</h1>
+
+      <% @patients.each do |patient| %>
+
+  <ul>
+    <li>
+    <%= link_to patient.first_name, patient_path(patient.id) %>
+    </li>
+  </ul>
+<% end %>
+
+
+  <%= link_to "add a new patient",  new_patient_path %>

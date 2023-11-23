@@ -1,0 +1,6 @@
+<h1><%= "#{@education.university} #{@education.degree_name }"%></h1>
+<h2><%= @education.specialty %></h2>
+<p><%= "Score #{@education.score}" %></p>
+<%= link_to "back to index", root_path %>
+<%= link_to "edit", edit_doctor_path %>
+<%= link_to "Delete", doctor_path,  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
